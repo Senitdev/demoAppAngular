@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+<style>
+  img{
+    background-color: white;
+    width: 14px;
+    height: 14px;
+   outline-offset: 0px;
+   border-radius: 2px;
+   fill:cover;
+   padding: 2px;
+   border: 2px solid black;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 2px;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+
+  }
+  div{
+    position: relative;
+    left: 40px;
+  }
+  button{
+    width: 80%;
+    max-width: 200px;
+    height: 35px;
+    border-radius:25px;
+    background-color:lightskyblue;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 35px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: rgb(116, 139, 146);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div>
+  <img src="assets/twitter.png">
+</div>
+<ul *ngFor="let item of Menu">
+  <li>
+    <img src="{{item.icone}}"><a href="">{{item.label}}</a>
+  </li>
+</ul>
+<button (click)="sloger()" >Tweet</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweet</title>
+  <style>
+    *{
+      background-color: black;
+      color: white;
+      margin: 2px;
+    }
+    .layouts{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+    }
+    .sidebar{
+      border-right: 1px solid gray;
+      border-top: 1px solid gray;
+      width: 22%;
+      height: 550px;
+
+    }
+    .header{
+      width: 50%;
+      height: 550px;
+      border-right: 1px solid gray;
+      border-top: 1px solid gray;
+
+    }
+    .follow{
+      width: 22%;
+      height: 550px;
+      border-top: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="layouts">
+    <div class="sidebar">
+<app-sidebar></app-sidebar>
+  <!--Sidebar-->
+    </div>
+    <div class="header">
+      <app-header></app-header>
+       <!--header-->
+          </div>
+    <div class="follow">
+      <app-follow></app-follow>
+<!--follow-->
+    </div>
+  </div>
+</body>
+</html>

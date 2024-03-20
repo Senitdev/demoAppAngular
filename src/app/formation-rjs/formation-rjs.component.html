@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste des personnes </title>
+</head>
+<body>
+<ul *ngFor="let item of listePersone">
+  <li>{{item.id}} {{item.prenom}} {{item.age}}</li>
+</ul>
+<li>Liste des personne mineurs</li>
+<ul *ngFor="let pers of PersonneFiltre">
+  <li>{{pers.id}} {{pers.prenom}} {{pers.age}}</li>
+</ul>
+</body>
+</html>

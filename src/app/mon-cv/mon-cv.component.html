@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redaction de CV</title>
+  </head>
+<body>
+<div class="header">
+</div>
+<div class="contenu">
+  <div class="donne">
+<p>Informations générales</p>
+<div id="choixLangue">
+  <p>Quelles langue souhaitez-vous pour votre CV</p>
+  <div>
+    <select name="langue">
+      <option value="FR">Francais</option>
+      <option value="ANG">Anglais</option>
+      <option value="ESP">Espagnole</option>
+    </select>
+  </div>
+</div>
+<div class="controleForm">
+<label for="poste">Intitulé du poste</label>
+<input type="text" placeholder="ex:Comptable" name="intitule" [(ngModel)]="intitule">
+<label id="prenom">Prénom</label>
+<input type="text" name="prenom" [(ngModel)]="prenom">
+<label id="nom">Nom</label>
+  <input type="text" name="nom" [(ngModel)]="nom">
+  <label for="email">Email</label>
+  <input type="text" name="email" [(ngModel)]="email">
+  <label for="telephone">Téléphone</label>
+  <input type="text" name="telephone" [(ngModel)]="telephone">
+
+<div id="resumeProfil">
+  Résumé du profil
+  <p>Mettez en évidence votre expérience générale,vos compétence clés et <br>
+  votre objectif de carriére en 3 & 4 lignes minimum.
+</p>
+  <div class="cadreProfil">
+    <textarea name="profil" cols="40" rows="2" [(ngModel)]="profil"></textarea>
+  </div>
+
+</div>
+</div>
+<div id="experience">
+  <p>Expérience professionnel</p>
+  </div>
+</div>
+  <div class="rendu">
+    <div id="photoProfil">
+     <img src="assets/photo.PNG">
+    </div>
+
+  <div class="entete">
+    <p><em><b><h4>PROFIL</h4></b></em></p>
+    <div>{{intitule}}</div>
+</div>
+<div id="profil">
+ <h2>{{prenom|uppercase}} {{nom | uppercase}}</h2>{{profil | uppercase}}
+</div>
+<div class="menu">
+  <div id="menuGauche">
+    menu gauche
+  </div>
+  <div id="menuDroit">
+  menu droite
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
+

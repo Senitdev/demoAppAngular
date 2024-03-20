@@ -1,0 +1,14 @@
+<p>Liste matieres</p>
+<fieldset>
+  <legend>Liste des matieres</legend>
+   <table>
+    <thead>
+      <th>ID</th>
+      <th>Libelle</th>
+      <th>Coef</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let matiere of listeMatiere"><td>{{matiere.id}}</td><td>{{matiere.libelle}}</td><td>{{matiere.coefficient}}</td><td><button (click)="delete(matiere)">Supprimer</button></td></tr>
+    </tbody>
+   </table>
+</fieldset>

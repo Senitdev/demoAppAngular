@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saisie de Personne</title>
+<link reel="stylesheet" type="text/css" href="add-personne.component.css">
+</head>
+<body>
+<p>Ajout de personne!</p>
+<div class="formulaire">
+<form [formGroup]="PersonneForm">
+  <div>
+  <label>Prenom</label>
+  <input type="text" placeholder="Votre prénom" formControlName="prenom">
+</div>
+<div>
+  <label for="nom">Nom</label>
+  <input type="text" placeholder="Votre nom" formControlName="nom">
+</div>
+<div>
+  <label>Adresse</label>
+   <input type="text" placeholder="Votre adresse" formControlName="adresse">
+</div>
+<div>
+  <label>Téléphone</label>
+  <input type="text" placeholder="Votre téléphone" formControlName="telephone">
+</div>
+<div>
+  <label>Email</label>
+  <input type="text" placeholder="Votre email" formControlName="email">
+</div>
+<div>
+  <button (click)="ajouter(PersonneForm)">Valider</button>
+</div>
+</form>
+</div>
+</body>
+</html>

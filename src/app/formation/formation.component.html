@@ -1,0 +1,54 @@
+<p>formation works!</p>
+<ul>
+  @for(user of users();track user.id;){
+    <li>{{user.name}}
+    <input type="checkbox" [(ngModel)]="user.isActive">
+    @if(user.isActive){
+      <span>- {{user.additionnelInfo}}</span>
+    }
+    <div>
+      @switch (user.status) {
+        @case ('active') {
+          <span>Statut :Active</span>
+        }
+        @case (('desactive')) {
+          <span>Statut:Desactive</span>
+        }
+      }
+    </div>
+    </li>
+  }
+
+</ul>
+<p>Liste des personnes</p>
+<ul>
+  @for (pers of personnes(); track pers.prenom) {
+    <li>
+      {{pers.prenom}} - {{pers.nom}} - {{pers.adresse}}
+    </li>
+  }
+
+</ul>:
+<p>Compteur :{{compteur}} </p>
+<button (click)="incrementer()">Incrementer</button>
+@if(compteur<10){
+  <span>Etat:Normal</span>
+}
+@else {
+  <span>Etat: Danger</span>
+}
+
+<p>Utilisation de defer temporisation</p>
+@defer(on timer(10s)){
+<span>Bonjour de longue</span>
+}
+@placeholder {
+  <span>En attente ....</span>
+}
+<p>Utilisation de defer on hover</p>
+@defer(on hover){
+  <button>Supprimer</button>
+}
+@placeholder {
+  <button>Ajouter</button>
+}

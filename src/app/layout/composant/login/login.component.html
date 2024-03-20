@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+</head>
+<body>
+  <div class="formLogin">
+    <form [formGroup]="newLoginForm">
+       <div>
+       <input type="text" name="login" placeholder="Email" formControlName="login">
+       @if(newLoginForm.get('login')?.invalid){
+        <span>Veuillez saisir le login</span>
+        }
+      </div>
+        <div>
+       <input type="password" name="password" placeholder="Password" formControlName="password" autocomplete="false">
+       @if(newLoginForm.get('password')?.invalid){
+       <span>Password doit etre minimum 6 caractére</span>
+       }
+      </div>
+        <button [disabled]="!newLoginForm.valid" (click)="valider()">Sign in</button>
+       <p>First time using twitter ? <a href="">Create an Account</a> </p>
+    </form>
+  </div>
+</body>
+</html>

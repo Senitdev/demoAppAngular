@@ -1,0 +1,26 @@
+<div class="container">
+  <p>Ajouter un compte!</p>
+  <form [formGroup]="FormProduit">
+    <div>
+    <label>CodeProduit</label>
+    <input type="text" formControlName="codeProduit">
+  </div>
+  <div>
+    <label>Designation</label>
+    <input type="text" formControlName="designation">
+  </div>
+  <div>
+    <label>Prix</label>
+    <input type="number" formControlName="prix">
+  </div>
+  <div>
+  <label>Stock</label>
+  <input type="number" formControlName="stock">
+</div>
+<div>
+  <button  (click)="saveProdui()">Enregistrer</button>
+</div>
+  </form>
+</div>
+
+

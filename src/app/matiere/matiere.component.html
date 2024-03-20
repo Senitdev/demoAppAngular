@@ -1,0 +1,13 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="matiere.component.css"/>
+</head>
+<p>Formulaire de saisie</p>
+<form [formGroup]="matiereForm">
+  <label for="designation" >Désignation</label>
+  <input type="text" formControlName="libelle">
+  <label>coefficient</label>
+  <input type="number" formControlName="coefficient">
+  <div>
+    <button (click)="valideSaisie()">Valider</button>
+  </div>
+</form>

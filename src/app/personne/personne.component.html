@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste des personnes</title>
+  <link reel="stylesheet" type="text/css" href="personne.component.css">
+</head>
+<body>
+<div>
+  <button (click)="addPersonne()" id="btn_add">Nouveau</button>
+</div>
+<p>liste des personnes!</p>
+<table>
+  <thead>
+  <th>
+    Id
+  </th>
+  <th>Prenom</th>
+  <th>Nom</th>
+  <th>Adresse</th>
+  <th>Telephone</th>
+  <th>Email</th>
+  <th>Actions</th>
+</thead>
+<tbody>
+  <tr *ngFor="let pers of personne"><td>
+    {{pers.id}}
+  </td>
+<td>
+  {{pers.prenom}}
+</td>
+<td>
+  {{pers.nom}}
+</td>
+<td>
+  {{pers.adresse}}
+</td>
+<td>
+  {{pers.telephone}}
+</td>
+<td>
+  {{pers.email}}
+</td>
+<td>
+  <button (click)="supprime(pers)" id="btn_delete">Supprimer</button>
+</td>
+</tr>
+</tbody>
+</table>
+</body>

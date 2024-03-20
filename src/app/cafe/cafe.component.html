@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des taches</title>
+  <style>
+    .item{
+      display: flex;
+      flex-direction: row;
+    }
+    img{
+      width: 70px;
+      height: auto;
+    }
+    img:hover{
+      cursor: pointer;
+      background-color: rgba(68, 12, 14, 0.333);
+      box-shadow: 2px solid #f125;
+    }
+  </style>
+</head>
+<body>
+<p>cafe works!</p>
+<button>+</button>
+
+<p>Nb tache : {{nbtache}}</p>
+<button (click)="videTache()">-</button>
+
+<div class="item">
+  <ul *ngFor="let item of listeImage">
+    <div class="test_{{item}}">
+    <img src={{imageActive}} (click)="modifierTache(item)">{{item}}
+    </div>
+  </ul>
+
+</div>
+</body>
+</html>

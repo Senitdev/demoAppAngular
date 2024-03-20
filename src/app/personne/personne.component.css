@@ -1,0 +1,39 @@
+*{
+  background-color: rgba(231, 218, 218, 0.692);
+}
+table{
+  width: 700px;
+}
+tr,td{
+  border: 1px solid rgba(165, 161, 161, 0.493);
+  font-family: 'Times New Roman', Times, serif;
+}
+thead{
+  background-color: rgba(153, 156, 142, 0.733);
+  color: rgba(49, 44, 44, 0.753);
+  font-weight: bold;
+}
+table:hover{
+  background-color:rgba(155, 150, 150, 0.712);
+  color:white;
+}
+button{
+  width: 120px;
+  height: 30px;
+  border: solid 2px crimson;
+  border-radius: 5px;
+  color: rgb(26, 24, 24);
+  font-weight: bold;
+}
+#btn_add:hover{
+  cursor: pointer;
+  background-color: rgba(57, 141, 57, 0.822);
+  color: white;
+  border: 3px solid crimson;
+}
+#btn_delete{
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border: 3px solid salmon;
+}

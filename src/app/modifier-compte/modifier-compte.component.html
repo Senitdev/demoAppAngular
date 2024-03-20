@@ -1,0 +1,24 @@
+<div *ngIf="ProduitForm">
+<p>Modification produit</p>
+<form [formGroup]="ProduitForm">
+<div>
+  <label>CodeProduit</label>
+  <input type="text" formControlName="codeProduit">
+</div>
+<div>
+  <label>Designation</label>
+  <input type="designation" formControlName="designation">
+</div>
+<div>
+  <label>Prix</label>
+  <input type="number" formControlName="prix">
+</div>
+<div>
+  <label>Stock</label>
+  <input type="number" formControlName="stock">
+</div>
+<div>
+  <button (click)="saveProduit()">Modifier</button>
+</div>
+</form>
+</div>

@@ -1,0 +1,46 @@
+<p>mon-dom works!</p>
+<table>
+  <thead>
+    <th>Titre</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of productList">
+      <td>{{product.title}}</td>
+      <td>{{product.price}}</td>
+    </tr>
+  </tbody>
+</table>
+<p>Liste des produits > 50</p>
+<br>
+<table>
+  <thead>
+    <th>Titre</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let productTrie of productFilter">
+      <td>
+        {{productTrie}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>Liste des produits < 50</p>
+<br>
+<table>
+  <thead>
+   <th>Titre</th>
+   <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produit of productfilter2">
+      <td>{{produit.title}}</td>
+      <td>{{produit.price}}</td>
+    </tr>
+  </tbody>
+</table>
+<p><Button (click)="incrementer()">Incrementer</Button></p>
+<p>Valeur:{{nb}}</p>
+<p>Etat du danger:{{alertCompteur()}}</p>
+<button (click)="reinitialise()">Réinitialiser</button>
+

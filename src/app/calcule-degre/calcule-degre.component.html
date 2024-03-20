@@ -1,0 +1,20 @@
+<p>calcule-degre works!</p>
+<p>Donne de calcule</p>
+<p>Celsuis:{{celsuis}}</p>
+<p>Fahreint : {{fahreint}}</p>
+<button (click)="doubleCelsuis()">Double</button>
+<p>V2 celcuis:{{(celsuis2())}}</p>
+<p>V2 fahreint :{{fahreint2()}}</p>
+<button (click)="doubleCelsuis2()">Double2</button>
+<p>Poids et age</p>
+<p>Poids:{{poids()}} kg</p>
+<p>age:{{age()}} ans</p>
+<button (click)="changePoid()">change poids</button>
+<br>
+<p>Calcule Diametre</p>
+<p>Diametre: {{diametre}}</p>
+<p>Rayon: {{rayon}}</p>
+<p>Modifier diametre:<input type="number" name="nb" [(ngModel)]="diametre"></p>
+<button (click)="recalcule()">Modifier</button>
+<p>Test avec le decorateur input</p>
+

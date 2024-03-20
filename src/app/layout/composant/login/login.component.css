@@ -1,0 +1,60 @@
+  *{
+    background-color: rgb(59, 53, 53);
+  }
+.formLogin{
+  width: 500px;
+  max-width: 50%;
+  height: auto;
+  background-color: black;
+  color:rgb(247, 244, 244);
+  box-shadow: 5px;
+  position: relative;
+  top: 100px;
+  left: 25%;
+
+}
+p{
+position: relative;
+left: 25%;
+top: 20px;
+}
+input{
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid rgb(197, 190, 190);
+   margin: 10px ;
+   padding: 10px;
+   color: whitesmoke;
+}
+input:focus{
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(158, 159, 235);
+}
+button{
+  width: 103%;
+  height: 50px;
+  background-color:linen;
+  color:black ;
+  border-radius: 25px;
+  padding: 10px;
+  position: relative;
+  top:20px;
+  left: 8px;
+ cursor: pointer;
+ border: 2px black;
+ font-size: 18px;
+}
+span{
+  color: red;
+  position: relative;
+  left: 10%;
+}
+button:hover{
+  background-color:rgb(231, 212, 192);
+}
+a{
+  color: gainsboro;
+  text-decoration: solid;
+}

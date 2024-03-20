@@ -1,0 +1,36 @@
+p{
+  width: auto;
+  height: 20px;
+  background-color:rgb(177, 152, 152);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+form{
+  width: 100px;
+  position: relative;
+  left: 500px;
+}
+button{
+  border-radius: 10px;
+  background-color: green;
+  text-transform: capitalize;
+  margin: 5px;
+  width: 250px;
+  height: 30px;
+}
+button:hover{
+  background-color: crimson;
+  text-decoration-color: aliceblue;
+  text-decoration: dashed;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+input{
+border-radius: 5px;
+height: 25px;
+text-transform: uppercase;
+width: 250px;
+}
+input:hover{
+  background-color: rgb(248, 247, 244);
+}

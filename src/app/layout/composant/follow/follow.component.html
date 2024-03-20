@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow me</title>
+  <style>
+    .base{
+      width: 140px;
+      height:80px;
+      margin: 2px 2px 5px ;
+      display: grid;
+      border-radius: 5px;
+      box-shadow: 5px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 2px solid rgb(27, 26, 26);
+      background-color: rgb(68, 68, 60);
+      grid-template: "titre titre"
+                      "logo login";
+
+    }
+    .base:hover{
+      background-color: rgb(114, 124, 136);
+      cursor: pointer;
+    }
+    img{
+      background-color: gray;
+      border-radius: 50%;
+      width: 40px;
+      height:auto;
+
+    }
+  .logo{
+    width: 100%;
+    grid-area: logo;
+    position: relative;
+     bottom: 10px;
+     padding-left: 5px;
+  }
+  .login{
+    width: 100%;
+    grid-area:login;
+    position: relative;
+     bottom: 25px;
+  }
+  .title{
+    width: 100%;
+    grid-area: titre;
+    line-height: 6px;
+    padding-left: 5px;
+  }
+  </style>
+</head>
+<body>
+  <div class="base">
+    <div class="title">
+      <p>Who to follow</p>
+    </div>
+    <div class="logo">
+      <img src="assets/people.png">
+    </div>
+    <div class="login">
+     <p>Full name<br>username</p>
+    </div>
+  </div>
+</body>
+</html>

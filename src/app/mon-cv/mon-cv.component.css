@@ -1,0 +1,121 @@
+button{
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  margin: 5px 5px 5px  5px solid green;
+  box-shadow: 5px lightcoral;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: lightgray;
+}
+.contenu{
+  display: flex;
+  flex-direction: row;
+}
+.donne{
+  width: 500px;
+  height: auto;
+  background-color: aqua;
+}
+.rendu{
+  width: 850px;
+background-color: blue;
+}
+#choixLangue{
+width: 450px;
+height: 100px;
+background-color: aliceblue;
+}
+select{
+  width: 320px;
+  height: 50px;
+  border: 2px solid lightgrey;
+  margin-top: 5px;
+}
+.controleForm{
+  width: 350px;
+}
+label{
+  width: 300px;
+  padding: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+input{
+  width: 300px;
+  height: 20px;
+  border-radius: 6px;
+  margin: 1px solid crimson;
+  padding: 5px;
+}
+
+#resumeProfil{
+  padding: 8px;
+}
+textarea{
+  border-radius: 5px;
+  margin: 2px solid crimson;
+}
+/* photo profil & cadre*/
+#photoProfil,img{
+width: 150px;
+height: auto;
+padding-left: 5px;
+
+}
+/*Entente profil prenom & nom , resume profil*/
+.entete{
+  width: 98.9%;
+  background-color: gray;
+  height: 50px;
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+
+}
+.entete>div{
+  position: relative;
+  bottom: 20px;
+   font-size: 16px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/*PRENOM & RESUME DU PROF*/
+#profil{
+  color: red;
+  position: relative;
+  left: 22%;
+  bottom: 180px;
+  width: 100%;
+  line-height: 10px;
+}
+
+.menu{
+  display: grid;
+  grid-template-areas: "gauche droite";
+}
+#menuGauche{
+  grid-area: gauche;
+  width: 200px;
+  height: 500px;
+  background-color: orange;
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+}
+#menuDroit{
+  grid-area: droite;
+  width: 620px;
+  height: 500px;
+  background-color: white;
+  position: relative;
+  bottom: 60px;
+
+}

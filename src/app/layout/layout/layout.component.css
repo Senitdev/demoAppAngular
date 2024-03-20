@@ -1,0 +1,31 @@
+*{
+  background-color: black;
+  color: white;
+  margin: 2px;
+}
+.layouts{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+.sidebar{
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  width: 22%;
+  height: 550px;
+
+}
+.header{
+  width: 50%;
+  height: 550px;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+
+}
+.follow{
+  width: 22%;
+  height: 550px;
+  border-top: 1px solid gray;
+}
