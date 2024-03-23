@@ -1,0 +1,17 @@
+table{
+  width: 500px;
+  height: 35px;
+  background-color: aliceblue;
+  justify-content: center;
+}
+
+thead{
+  color: white;
+  background-color: rgb(61, 55, 55);
+}
+tbody{
+  text-align: center;
+}
+td,tr{
+  border: 1px solid black;
+}

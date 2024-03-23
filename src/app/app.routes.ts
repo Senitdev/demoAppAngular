@@ -15,6 +15,7 @@ import { ModifierCompteComponent } from './modifier-compte/modifier-compte.compo
 import { MonCVComponent } from './mon-cv/mon-cv.component';
 import { MonDomComponent } from './mon-dom/mon-dom.component';
 import { OperationComponent } from './operation/operation.component';
+import { ParentComponent } from './parent/parent.component';
 import { PersonneComponent } from './personne/personne.component';
 
 export const routes: Routes = [
@@ -34,5 +35,6 @@ export const routes: Routes = [
   {path:"exo3",component:CalculeDegreComponent},
   {path:"exo4",component:FormationRjsComponent},
   {path:"tweet",component:LayoutComponent},
-  {path:"login",component:LoginComponent}
+  {path:"login",component:LoginComponent},
+  {path:"exo5",component:ParentComponent}
 ];

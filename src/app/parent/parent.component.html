@@ -1,0 +1,28 @@
+<p>parent works!</p>
+<p>Liste des personnes</p>
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Prenom</th>
+    <th>Nom</th>
+    <th>Sexe</th>
+    <th>Actions</th>
+  </thead>
+  <tbody>
+<tr *ngFor="let item of listePersone">
+  <td>
+  {{item.id}}
+  </td>
+  <td>
+    {{item.prenom}}
+  </td>
+  <td>
+    {{item.nom}}
+  </td>
+  <td>{{item.sexe}}</td>
+  <td><button (click)="details(item.id)">Details</button></td>
+</tr>
+  </tbody>
+</table>
+<app-enfant (newItem)="addEvent($event)" [Pers]="currentUser"></app-enfant>
+<p>Solde:{{nb}}</p>

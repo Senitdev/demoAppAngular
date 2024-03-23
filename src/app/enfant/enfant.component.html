@@ -1,0 +1,13 @@
+<div *ngIf="Pers?.id!==null">
+  <p>Enfant work</p>
+  <p>Détails d'un users</p>
+  <ul>
+    <li>ID : {{Pers?.id}}</li>
+    <li>Prenom : {{Pers?.prenom}}</li>
+    <li>Nom : {{Pers?.nom}}</li>
+    <li>Sexe : {{Pers?.sexe}}</li>
+    <li>Solde : {{Pers?.solde}}</li>
+  </ul>
+</div>
+<p>Solde:<input type="number" name="newItem" #newItem></p>
+<button (click)="additem(newItem.value)">Valider</button>
