@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercie</title>
+</head>
+<body>
+  Login:<input type="text" #myInput>
+<button (click)="changerValeur()">Changer valeur</button>
+<p>Liste des produits</p>
+<table>
+  <thead>
+    <th>
+      choix
+    </th>
+    <th>
+      Designation
+    </th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produits of ListeProduct">
+      <td><input type="checkbox" [value]=""></td>
+      <td>
+        {{produits.title}}
+      </td>
+      <td>
+        {{produits.price}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>Elemebt de la classe:{{Mode.firstName}} {{Mode.lastName}}</p>
+<button class="btn btn-danger">Ajouter</button>
+</body>
+
+</html>
+

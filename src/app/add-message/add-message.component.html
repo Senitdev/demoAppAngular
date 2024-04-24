@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Add message</p>
+  <nav>
+  <form [formGroup]="formMessage">
+    <label>Objet</label>
+    <input type="text" name="objet" placeholder="Objet" formControlName="objet">
+    <input type="hidden" formControlName="login">
+    <label>Contenu</label>
+    <textarea name="contenu"  colspan=5 formControlName="contenu"></textarea>
+    <button [disabled]="formMessage.invalid" class="btn-add" (click)="saveMessage()">Save</button>
+  </form>
+  </nav>
+</body>
+</html>

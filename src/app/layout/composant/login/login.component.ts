@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { LoginService } from '../../../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit {
-  constructor(){
+  constructor(private serviceLogin:LoginService){
   }
   public newLoginForm=new FormGroup({
     login:new FormControl("",[Validators.required,Validators.minLength(6)]),
@@ -19,7 +20,22 @@ export class LoginComponent implements OnInit {
 ngOnInit(): void {
 
 }
+user:any;
+auh:boolean=false;
 valider(){
-  console.log(this.newLoginForm.value);
+  this.serviceLogin.seLoger(this.newLoginForm.value).subscribe(
+    {
+      next:data=>{
+        this.user=data;
+        localStorage.setItem("token",this.user.token);
+        this.auh=true;
+      },
+      error:err=>(
+        console.log(err.error.message)
+      )}
+  );
+
+    localStorage.removeItem("token");
+
 }
 }

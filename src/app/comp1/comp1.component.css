@@ -1,0 +1,21 @@
+button{
+  width:103%;
+height: 35px;
+border-radius: 5px;
+padding: 2px;
+margin: 5px;
+background-color:lightgreen;
+position: relative;
+color: white;
+font-size: 18px;
+}
+input{
+  width: 102%;
+  height: 25px;
+  border-radius: 5px;
+  margin: 2px;
+}
+div{
+  width: 25%;
+ margin: 5px;
+}

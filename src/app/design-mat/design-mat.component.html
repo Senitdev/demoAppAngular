@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>design-mat works!</p>
+<ul *ngFor="let item of listeClient">
+  <li>{{item.icone}} {{ item.url}}</li>
+</ul>
+<button mat-button color="warn">Warn</button>
+<button mat-raised-button color="warn">Warn</button>
+<button mat-button (click)="openDialog()">Open dialog</button>
+<p>Exercices sur les composants</p>
+<p>Date</p>
+Profile:<input type="text" name="prenom" (change)="changeInput($event)">
+</body>
+</html>

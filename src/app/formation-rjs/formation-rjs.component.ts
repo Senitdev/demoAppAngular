@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-formation-rjs',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './formation-rjs.component.html',
   styleUrl: './formation-rjs.component.css'
 })
 export class FormationRjsComponent {
+qte=signal(1);
+somme=computed(()=>this.qte()*2)
 listePersone=[
   {id:1,prenom:"pape",age:25},
   {id:2,prenom:"Salif",age:30},
@@ -20,4 +23,7 @@ listePersone=[
 
 ]
 PersonneFiltre=this.listePersone.filter((personne=>personne.age<=18));
+triple(){
+this.qte.set(this.qte()*3);
+}
 }

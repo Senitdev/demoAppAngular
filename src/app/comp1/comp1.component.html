@@ -1,0 +1,42 @@
+<p>comp1 works!</p>
+<div>
+<form [formGroup]="formLogin">
+  <label>Login :<input type="text" formControlName="email"></label>
+  <button (click)="sloger()">Se loger</button>
+</form>
+<button (click)="valider()">Afficher</button>
+</div>
+<ng-template #model>
+  <p>Test avec ngClass</p>
+ <p>Je proviens de ng template composant 1</p>
+</ng-template>
+<ng-template #model2>
+  <p>Test avec ngClass</p>
+ <p>Je proviens de ng template composant suivant1</p>
+</ng-template>
+<ng-template #model3>
+  <p>Test avec ngClass</p>
+ <p>Je proviens de ng template suivant2</p>
+</ng-template>
+@switch (etape) {
+ @case (1) {
+  <div >je suis la partie 1</div>
+  <div class="situation">
+    <p>Veuillez definir ton situation matrimoniale</p>
+    <ul *ngFor="let lib of situtation">
+      <li>
+        <p>
+     <input type="radio" name="lib.libelle">
+       {{lib.libelle}}
+      </p>
+      </li>
+    </ul>
+  </div>
+ }
+ @case (2) {
+  <div>Je suis la partie suivant2</div>
+ }
+ @case (3) {
+  <div>Je suis la partie partrimoine</div>
+ }
+}

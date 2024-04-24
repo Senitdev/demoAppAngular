@@ -11,7 +11,7 @@ import { Personne } from '../model/personne';
 })
 export class EnfantComponent {
   @Input() Pers:Personne | null=null;
-@Output() newItem=new EventEmitter<string>;
+ @Output() newItem=new EventEmitter<string>;
 additem(value:string){
   this.newItem.emit(value)
 }

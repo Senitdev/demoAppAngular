@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<nav>
+  <ul>
+    <li class="deroulant">
+      <a href="">Cours complet</a>
+      <ul class="sous">
+    <li>
+      <a href="">Cours HTML</a>
+    </li>
+    <li>
+      <a href="">Cours JavaScript</a>
+    </li>
+    <li>
+      <a href="">Cours Java</a>
+    </li>
+  </ul>
+  </li>
+
+  <li class="deroulant"><a href="">Programmation</a>
+    <ul class="sous">
+      <li>Go</li>
+      <li>Python</li>
+      <li>Rust</li>
+      <li>C#</li>
+    </ul>
+  </li>
+  <li class="deroulant"><a href="">Nos Formations</a>
+<ul class="sous">
+  <li>Community Manager</li>
+  <li>Babel</li>
+  <li>Cyber sécurity</li>
+</ul>
+  </li>
+  <li><a href="">Contact</a></li>
+  <li><a href="">A propos</a></li>
+  </ul>
+
+<p>onchange works!</p>
+<div class="menu">
+<ul *ngFor="let play of Players">
+  <li>
+    {{play.prenom}} <input type="radio" name="play.prenom" (click)="clicker(play.prenom)">
+  </li>
+</ul>
+  <div class="p1">
+  <p>Bienvnue {{joueur}}</p>
+  </div>
+</div>
+</nav>
+</body>
+</html>
+

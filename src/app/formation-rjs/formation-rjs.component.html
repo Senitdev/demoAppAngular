@@ -13,5 +13,10 @@
 <ul *ngFor="let pers of PersonneFiltre">
   <li>{{pers.id}} {{pers.prenom}} {{pers.age}}</li>
 </ul>
+<p>Les signals en angular</p>
+  <p>Quantite:<input type="text" name="qte()"></p>
+  <p>qte:{{qte()}}</p>
+  <p>Mutiple:{{somme()}}</p>
+<button (click)="triple()">valider</button>
 </body>
 </html>

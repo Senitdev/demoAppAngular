@@ -1,0 +1,118 @@
+li{
+  list-style: none;
+  display: inline-block;
+}
+.menu{
+  width: 300px;
+  height: auto;
+  background-color: rgb(191, 233, 149);
+  color: rgb(138, 148, 156);
+  font-size: 20px;
+  text-align: left;
+  border-radius: 5px;
+  margin: 2px solid gray;
+  padding: 5px;
+}
+p{
+  position: relative;
+  left: 40px;
+  font-size: 20px;
+  color: black;
+}
+.p1{
+  width: 100%;
+  background-color: rgba(234, 240, 155, 0.822);
+  height: 50px;
+  margin: 2px solid gray;
+  padding: 5px;
+  position: relative;
+  left: -4px;
+  top: 4px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+/* menu css*/
+/*Reset CSS*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+
+nav{
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li{
+  float: left;
+  width: 25%;
+  position: relative;
+  text-align: center;
+}
+
+nav ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+nav a:hover{
+  color: orange;
+  border-bottom: 2px solid gold;
+}
+
+.sous{
+  display: none;
+  box-shadow: 0px 1px 2px #CCC;
+  background-color: white;
+  position:absolute;
+  width: 100%;
+  z-index: 1000;
+  left: 100px !important;
+
+
+}
+nav > ul li:hover .sous{
+  display: flex;
+  flex-direction: column;
+}
+.sous li{
+  float: none;
+  width: 100%;
+  text-align: left;
+  background-color: red;
+  line-height: 15px;
+}
+.sous a{
+  padding: 10px;
+  border-bottom: none;
+}
+.sous a:hover{
+  border-bottom: none;
+  background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+  content:" ▼";
+  font-size: 12px;
+}
+
+.conteneur{
+margin: 50px 20px;
+height: 1500px;
+}

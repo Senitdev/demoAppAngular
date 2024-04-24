@@ -1,0 +1,32 @@
+*{
+  margin: 5px;
+  padding: 5px;
+}
+button{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: aliceblue;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background-color: lavender;
+  color: black;
+}
+table{
+  width: 50%;
+}
+thead{
+  background-color: black;
+  color: white;
+}
+tbody{
+  background-color: antiquewhite;
+}
+
+tbody:hover{
+  background-color: rgb(161, 129, 90);
+  cursor: pointer;
+}

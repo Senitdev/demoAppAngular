@@ -1,0 +1,32 @@
+nav{
+  margin: 0;
+  padding: 5px;
+}
+table{
+  width: 100%;
+
+}
+thead{
+background-color: black;
+color: white;
+}
+button{
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px solid green;
+}
+button:hover{
+  background-color: linear-gradient(width,rgb(94, 41, 41),rgb(57, 77, 57));
+  cursor: pointer;
+}
+.btn-add{
+  background-color: greenyellow;
+  color: white;
+}
+.btn-delete{
+  background-color: rgb(182, 26, 86);
+  color: white;
+}

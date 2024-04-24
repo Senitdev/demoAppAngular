@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boite de messagerie</title>
+</head>
+<body>
+  <nav>
+    <p><a href="/addMessage"><button class="btn-add">message</button></a></p>
+    <table>
+      <thead>
+        <th>Date création</th>
+        <th>Objet</th>
+        <th>Contenu</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let message of listeMessage">
+          <td>{{message.date}}</td>
+          <td>{{message.objet}}</td>
+          <td>{{message.contenu}}</td>
+          <td><button class="btn-delete" (click)="supprimeMessage(message.id)">supprime</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </nav>
+</body>
+</html>
