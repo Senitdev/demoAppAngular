@@ -1,26 +1,30 @@
+<mat-dialog-content>
 <div class="container">
   <p>Ajouter un compte!</p>
   <form [formGroup]="FormProduit">
     <div>
     <label>CodeProduit</label>
-    <input type="text" formControlName="codeProduit">
+    <input type="text" formControlName="codeProduit" required>
   </div>
   <div>
     <label>Designation</label>
-    <input type="text" formControlName="designation">
+    <input type="text" formControlName="designation" required>
   </div>
   <div>
     <label>Prix</label>
-    <input type="number" formControlName="prix">
+    <input type="number" formControlName="prix" required>
   </div>
   <div>
   <label>Stock</label>
-  <input type="number" formControlName="stock">
+  <input type="number" formControlName="stock" required>
 </div>
 <div>
-  <button  (click)="saveProdui()">Enregistrer</button>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button  [disabled]="!FormProduit.valid" [mat-dialog-close]="true" cdkFocusInitial (click)="saveProdui()">Enregistrer</button>
+  </mat-dialog-actions>
 </div>
   </form>
 </div>
-
+</mat-dialog-content>
 

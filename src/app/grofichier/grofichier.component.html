@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envoyede gros fichier</title>
+</head>
+<body>
+  <div class="container">
+  <div class="header">
+    Header
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <button class="btn-menu">1</button><input type="file" class="choix-fichier" (change)="onSelectFile($event)">
+      </li>
+      <li>
+        <button class="btn-menu">2</button><button class="upload">upload your file</button>
+      </li>
+      <li>
+        <button class="btn-menu">3</button><button class="upload">Write your email message</button>
+        <div class="form">
+          <form [formGroup]="myForm">
+            <label>Your name</label>
+            <input type="text" name="nom" class="input-form" formControlName="nom">
+            <label>Your Mail adresse</label>
+            <input type="email" name="email" class="input-form" formControlName="email">
+            <label>Email récipients</label>
+            <input type="email1" placeholder="Email 1" class="input-form" formControlName="email1">
+            <label></label>
+            <input type="email2" placeholder="Email n° 2" class="input-form" formControlName="email2">
+            <label>Subject of the email</label>
+            <input type="text" name="subject"  class="input-form" formControlName="subject">
+            <label>Content</label>
+            <textarea name="content" colspan="10" formControlName="content"></textarea>
+          </form>
+        </div>
+      </li>
+      <li>
+        <button [disabled]="myForm.invalid" (click)="sendFile()">Envoyer le fichier</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+</body>
+</html>
+

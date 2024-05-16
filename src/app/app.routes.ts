@@ -9,10 +9,12 @@ import { ComptesComponent } from './comptes/comptes.component';
 import { DasbordComponent } from './dasbord/dasbord.component';
 import { DesignMatComponent } from './design-mat/design-mat.component';
 import { DomComponent } from './dom/dom.component';
+import { ExoTestComponent } from './exo-test/exo-test.component';
 import { ExoComponent } from './exo/exo.component';
 import { Exo2Component } from './exo2/exo2.component';
 import { FormationRjsComponent } from './formation-rjs/formation-rjs.component';
 import { FormationComponent } from './formation/formation.component';
+import { GrofichierComponent } from './grofichier/grofichier.component';
 import { LoginComponent } from './layout/composant/login/login.component';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { ListeMatieresComponent } from './liste-matieres/liste-matieres.component';
@@ -25,6 +27,7 @@ import { OnchangeComponent } from './onchange/onchange.component';
 import { OperationComponent } from './operation/operation.component';
 import { ParentComponent } from './parent/parent.component';
 import { PersonneComponent } from './personne/personne.component';
+import { ProfesseurComponent } from './professeur/professeur.component';
 import { UploadComponent } from './upload/upload.component';
 
 export const routes: Routes = [
@@ -54,5 +57,8 @@ export const routes: Routes = [
   {path:"addMessage",component:AddMessageComponent},
   {path:"upload",component:UploadComponent},
   {path:"design",component:DesignMatComponent},
-  {path:"exo8",component:Exo2Component}
+  {path:"exo8",component:Exo2Component},
+  {path:"test",component:ExoTestComponent},
+  {path:"grofichier",component:GrofichierComponent},
+  {path:"professeur",component:ProfesseurComponent}
 ];

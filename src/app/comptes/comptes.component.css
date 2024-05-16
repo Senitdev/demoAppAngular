@@ -1,0 +1,35 @@
+button{
+  width: 150px;
+  height: 35px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+table{
+  width: 50%;
+}
+thead{
+  background-color: black;
+  color:white ;
+  font-weight: bold;
+}
+tbody{
+  background-color: antiquewhite;
+}
+.btn-add{
+  background-color: lightgreen;
+  color: black;
+  bottom:5px;
+}
+.btn-modif{
+  background-color: lightsteelblue;
+  color: aliceblue;
+  width: 90%;
+}
+.btn-delete{
+  background-color: crimson;
+  color: white;
+  width: 90%;
+}

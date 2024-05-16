@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatDialogActions, MatDialogClose, MatDialogContent } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ajout-compte',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule],
+  imports: [ReactiveFormsModule,CommonModule,MatDialogClose,MatDialogContent,MatDialogActions],
   templateUrl: './ajout-compte.component.html',
   styleUrl: './ajout-compte.component.css'
 })
@@ -26,7 +27,7 @@ saveProdui() {
   return this.http.post("http://localhost:9096/api/v2/produit",this.FormProduit.value).subscribe({
   next:data=>{
     alert("Produit ajoute");
-    this.route.navigateByUrl("/liste")
+   // this.route.navigateByUrl("/liste")
 
   } ,
   error:err=>{

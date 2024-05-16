@@ -1,7 +1,14 @@
 
 
-  <input type="file" name="fichier" class="fileupload"  (change)="onSelectFile($event)">
+<input type="file" name="fichier" class="fileupload"  (change)="onSelectFile($event)">
 <button (click)="upload()">Upload</button>
+<p>Liste des fichiers</p>
+<p>
+</p>
+<div class="liste">
+<ul *ngFor="let item of listeImage">
+  <li><img src={{urlLoad+item.id}} alt="image"> <button (click)="supprime(item.id)">Supprimer</button> </li>
 
-
-
+</ul>
+</div>
+<P>EXERCICE SUR MAT DESIGN</P>

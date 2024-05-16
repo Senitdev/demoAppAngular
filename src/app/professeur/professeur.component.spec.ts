@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormationRjsComponent } from './formation-rjs.component';
+import { ProfesseurComponent } from './professeur.component';
 
-describe('FormationRjsComponent', () => {
-  let component: FormationRjsComponent;
-  let fixture: ComponentFixture<FormationRjsComponent>;
+describe('ProfesseurComponent', () => {
+  let component: ProfesseurComponent;
+  let fixture: ComponentFixture<ProfesseurComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormationRjsComponent]
+      imports: [ProfesseurComponent]
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(FormationRjsComponent);
+    
+    fixture = TestBed.createComponent(ProfesseurComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,5 +20,4 @@ describe('FormationRjsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
 });

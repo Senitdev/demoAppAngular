@@ -17,3 +17,17 @@ button{
   cursor: pointer;
   padding: 5px;
 }
+img{
+  width: 15%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.liste{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+li{
+  display: flex;
+  flex-direction: row;
+}

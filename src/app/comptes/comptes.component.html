@@ -1,15 +1,17 @@
 <div class="container">
 <p>Liste des comptes!</p>
+<button class="btn-add" mat-button (click)="openDialog()">Ajouter</button>
 <table>
-<tr>
-  <td>ID</td>
-  <td>Code</td>
-  <td>Designation</td>
-  <td>Prix</td>
-  <td>Stock</td>
-  <td>Modifier</td>
-  <td>Action</td>
-</tr>
+  <thead>
+  <th>ID</th>
+  <th>Code</th>
+  <th>Designation</th>
+  <th>Prix</th>
+  <th>Stock</th>
+  <th>Modifier</th>
+  <th>Action</th>
+</thead>
+<tbody>
   <tr *ngFor="let produit of prod">
     <td>
       {{produit.id}}
@@ -27,11 +29,12 @@
     {{produit.stock}}
   </td>
   <td>
-    <button (click)="modifier(produit)">Modifier</button>
+    <button  class="btn-modif"(click)="modifier(produit)">Modifier</button>
   </td>
   <td>
-    <button (click)="supprimer(produit)">Supprimer</button></td>
+    <button class="btn-delete"(click)="supprimer(produit)">Supprimer</button></td>
 </tr>
+</tbody>
 </table>
 </div>
 <div>
